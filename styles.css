@@ -2,64 +2,179 @@
     font-family: 'Montserrat';
 }
 body {
-    margin: 0;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 .circles {
-    position: relative;
+    position: absolute;
     width: 40em;
     height: 80em;
-    float: right;
-    margin-left: auto;
+    text-align: right;
+    transform: translate(39em);
+    z-index: -100;
 }
 
 #red {
     position: absolute;
     border-radius: 50%;
-    background: tomato;
-    height: 80em;
-    width: 40em;
-    border-radius: 40em 0 0 40em;
+    background: #fb5252;
+    height: 100em;
+    width: 50em;
+    border-radius: 50em 0 0 50em;
     margin-left: auto;
     margin-right: 0;
     margin-top: auto;
     margin-bottom: 0;
-    transform: translate(10em , -35em);
+    transform: translate(0em , -55em);
 
 }
 #yellow {
     position: absolute;
     border-radius: 50%;
     background: sandybrown;
-    height: 70em;
-    width: 35em;
-    border-radius: 35em 0 0 35em;
+    height: 80em;
+    width: 40em;
+    border-radius: 40em 0 0 40em;
     margin-left: 5em;
     margin-right: 0;
     margin-top: 10em;
     margin-bottom: 0;
-    transform: translate(10em , -35em);
+    transform: translate(5em , -45em);
 }
 #gray {
     position: absolute;
     border-radius: 50%;
     background: #3b4151;
-    height: 50em;
-    width: 25em;
-    border-radius: 25em 0 0 25em;
+    height: 70em;
+    width: 35em;
+    border-radius: 35em 0 0 35em;
     margin-left: 15em;
     margin-right: 0;
     margin-top: 30em;
     margin-bottom: 0;
-    transform: translate(10em , -35em);
+    transform: translate(0em , -55em);
 }
 header {
-    display: inline;
+    display: flex;
+    flex-direction: row;
 }
-.button1 {
-    margin-right: 3em;
-    position: absolute;
+.dash {
+}
+#button1 {
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 4px 20px 4px 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    background-color: #3b4151;
+}
+#button1:hover {
+    background-color: #fb5252;
+    color: #3b4151;
+}
+
+.grid {
+    margin-top: 20em;
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+.task-managment {
+    margin-top: 15em;
+    grid-column: 1;
+    grid-row: 1;
+    width: 49%;
+    
+}
+.task-managment > p {
+    color: gray;
+}
+#email {
+    padding: 0.8em;
+    margin-top: 3em;
+    border-color: silver;
+    border-style: solid;
+    border-radius: 1.4em;
+    margin-right: 1em;
+}
+#button2 {
+    padding: 0.8em;
+    border-radius: 1.4em;
+    margin-top: 3em;
+    border: 0;
+    background-color: #fb5252;
+    color: white;
+    box-shadow: 0 0.4em 1em #fb5252;
+}
+.cards1 {
+    width: 50%;
+    grid-column: 2;
+    grid-row: 1 / pan 2;
+}
+
+
+
+.logos {
+    margin-top: 5em;
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2em;
+    justify-content: space-evenly;
+    width: 49%;
+}
+.logos > img {
+    height: 2em;
+    width: auto;
+}
+h1 {
+    font-size: 3em;
+}
+.key-ben {
+    text-align: center;
+    width: 90%;
+}
+
+.key-ben > h1 {
+    
+    font-size: 2em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 10em;
+}
+.cards2 {
+    display: flex;
+    flex-direction: row;
+}
+.cards2 > div {
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5em;
+}
+.cards2 > div > p {
+    color: gray;
+}
+.cards2 > div > [id^=task] {
+    text-align: center;
+    margin: auto;
+    width: 4em;
+    height: 4em;
+    border-color: white;
+    border-style: solid;
+    border-radius: 0.3em;
+    border-width: 0.01em;
+    box-shadow: 0.5em 0.5em 2em  silver;
+}
+#task1 {
+    
 }
 
 #3b4151 darkslategray
 sandybrown
-tomato
+tomato #fb5252
