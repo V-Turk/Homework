@@ -59,6 +59,7 @@ header {
     flex-direction: row;
 }
 .dash {
+    font-weight: bolder;
 }
 #button1 {
     margin-left: auto;
@@ -139,7 +140,7 @@ h1 {
     width: 90%;
 }
 
-.key-ben > h1 {
+.key-ben > h2 {
     
     font-size: 2em;
     text-align: center;
@@ -172,7 +173,7 @@ h1 {
     box-shadow: 0.5em 0.5em 2em  silver;
 }
 #task1 {
-    
+
 }
 
 #3b4151 darkslategray
